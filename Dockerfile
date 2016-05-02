@@ -6,6 +6,7 @@ RUN apt-get update -qy && apt-get install -qy --no-install-recommends \
     g++ \
     gcc \
     libc6-dev \
+    git \
     make \
   && rm -rf /var/lib/apt/lists/*
 
