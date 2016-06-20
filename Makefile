@@ -10,8 +10,6 @@ build/image:
 	docker build \
 		--build-arg GOLANG_VERSION=$(golang_version) \
 		--build-arg GOLANG_DOWNLOAD_SHA256=$(golang_download_sha) \
-		--build-arg http_proxy=http://webproxysea.nordstrom.net:8181 \
-		--build-arg https_proxy=http://webproxysea.nordstrom.net:8181 \
 		-t $(container_name) .
 
 tag/image: build/image
